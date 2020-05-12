@@ -1,11 +1,11 @@
 import pytest
 import yaml
 
-from 计算器作业.calc import Calc
+from calcTask1.calc import Calc
 
 
 class TestCalc:
-    @pytest.mark.parametrize(("a", "b", "c"), yaml.safe_load(open("计算器作业/calc_add.yml")))
+    @pytest.mark.parametrize(("a", "b", "c"), yaml.safe_load(open("calcTask1/calc_add.yml")))
     def test_add(self, a, b, c):
         self.calc = Calc()
         result = self.calc.add(a, b)

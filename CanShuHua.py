@@ -1,3 +1,5 @@
+from random import random
+
 import pytest
 import yaml
 
